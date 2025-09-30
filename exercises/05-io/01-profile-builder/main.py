@@ -12,3 +12,32 @@ and displays a formatted profile.
 # 3. Convert age to int and height to float
 # 4. Calculate birth year (2024 - age)
 # 5. Display formatted profile using f-strings
+import time
+import sys
+import os
+
+def clear():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+def skrivmaskin(text, delay=0.05):
+    for char in text:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(delay)
+
+name = input("Vad är ditt namn? ")
+clear()
+age = int(input("Hur gammal är du? "))
+clear()
+height = input ("Hur lång är du? ")
+clear()
+hobby = input ("Vad gillar du att göra? ")
+clear()
+
+skrivmaskin("Här är din information:\n", 0.09)
+time.sleep(0.5)
+
+skrivmaskin(f"Namn: {name} \n", 0.01)
+skrivmaskin(f"Födelse år: {2025 - age} \n", 0.01)
+skrivmaskin(f"Längd: {height} \n", 0.01)
+skrivmaskin(f"Hobby: {hobby} \n", 0.01)

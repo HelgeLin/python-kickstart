@@ -1,34 +1,28 @@
-# Exercise 1: Area Calculator Functions
-# Practice defining and using functions for mathematical calculations
-
-# TODO: Define your area calculation functions here
-
 def calculate_rectangle_area(length, width):
     """Calculate the area of a rectangle"""
-    # TODO: Calculate and return length * width
-    pass
+    area = length * width
+    return area
 
 def calculate_circle_area(radius):
     """Calculate the area of a circle"""
-    # TODO: Calculate and return π * radius²
-    # Use 3.14159 for π
-    pass
+    area = 3.14159 * radius ** 2
+    return area
 
 def calculate_triangle_area(base, height):
     """Calculate the area of a triangle"""
-    # TODO: Calculate and return (base * height) / 2
-    pass
+    area = (base * height) / 2
+    return area
 
-# TODO: Use your functions to calculate areas
 print("=== Area Calculator ===")
 
 # Test your functions with these values:
-# Rectangle: length=5, width=3
-# Circle: radius=4
-# Triangle: base=6, height=8
+rectangle_area = calculate_rectangle_area(5, 3)
+print(f"Rectangle (5 × 3): {rectangle_area} square units")
 
-# Example of how to call a function (uncomment and complete):
-# rectangle_area = calculate_rectangle_area(5, 3)
-# print(f"Rectangle (5 × 3): {rectangle_area} square units")
+circle_area = calculate_circle_area(4)
+print(f"Circle (radius 4): {circle_area:.2f} square units")
 
-# TODO: Add calls for circle and triangle calculations
+triangle_area = calculate_triangle_area(6, 8)
+print(f"Triangle (6 × 8): {triangle_area} square units")
+
+

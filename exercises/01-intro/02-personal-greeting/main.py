@@ -6,3 +6,6 @@ Write your code below to print your name and a welcome message.
 """
 
 # Write your code here
+
+print("Hello Helge, welcome.")
+print("Fuck you Oliver.")

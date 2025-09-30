@@ -6,3 +6,5 @@ Write your code below to print "Hello, World!" to the console.
 """
 
 # Write your code here
+
+print("Hello, World!")

@@ -6,3 +6,12 @@ Write your code below with comments explaining each print statement.
 """
 
 # Write your code here
+
+#den här koden säger helge 
+print("Helge")
+
+#den här säger hej
+print("hej")
+
+#fuck you oliver
+print("fuck you oliver")
